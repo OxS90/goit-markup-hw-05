@@ -232,10 +232,6 @@ header {
 	opacity: 1;
 	pointer-events: all;
 }
-.backdrop.active {
-	transform: scale(1);
-	transition: 3000ms linear;
-}
 .main-section-intro .close-button {
 	width: 30px;
 	height: 30px;
