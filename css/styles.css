@@ -63,7 +63,7 @@ header {
 	padding-left: 93px;
 	position: relative;
 }
-.navigation-tabs .link {
+.navigation-tabs .active-link {
 	position: relative;
 }
 .navigation-tabs .active-link::after {
@@ -197,49 +197,40 @@ header {
 	cursor: pointer;
 	border-radius: 4px;
 }
-.backdrop {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.2);
-	visibility: visible;
+.modal-flex {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-@keyframes scalare {
-	0% {
-		transform: scale(0.4);
-		opacity: 0.4;
-	}
-	50% {
-		transform: scale(0.7);
-		opacity: 0.7;
-	}
-	100% {
-		transform: scale(1);
-		opacity: 1;
-	}
-}
-.backdrop:not(.is-hidden) .modal {
-	animation: scalare 3000ms;
-	animation-timing-function: linear;
-}
-.backdrop.is-hidden {
-	visibility: hidden;
-	opacity: 0;
-	pointer-events: none;
-}
 .modal {
-	position: absolute;
-	background-color: var(--text-dark-bg-color);
+	position: fixed;
+	background: var(--text-dark-bg-color);
 	border-radius: 4px;
 	box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
 		0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 	width: 528px;
 	height: 581px;
+	transform: scale(0);
+	transition: 3000ms linear;
+	z-index: 10;
+}
+.modal.active {
+	transform: scale(1);
+}
+.main-section-intro #overlay {
+	position: fixed;
+	opacity: 0;
+	transition: opacity 3000ms linear;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.2);
+	pointer-events: none;
+}
+.main-section-intro #overlay.active {
+	opacity: 1;
+	pointer-events: all;
 }
 .main-section-intro .close-button {
 	width: 30px;
@@ -254,6 +245,7 @@ header {
 	position: absolute;
 	right: 8px;
 	top: 8px;
+	cursor: pointer;
 }
 .main-section-intro .close-button svg {
 	width: 18px;
