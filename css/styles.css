@@ -469,34 +469,36 @@ ul.customers-section {
 	overflow: hidden;
 }
 .project-card:nth-child(1) .box {
-	background: url(/images/technoduck.jpg), lightgray 50% / cover no-repeat;
+	background: url(../images/technoduck.jpg), lightgray 50% / cover no-repeat;
 }
 .project-card:nth-child(2) .box {
-	background: url(/images/poster_new_orleans.jpg),
+	background: url(../images/poster_new_orleans.jpg),
 		lightgray 50% / cover no-repeat;
 }
 .project-card:nth-child(3) .box {
-	background: url(/images/seafood_restaurant.jpg),
+	background: url(../images/seafood_restaurant.jpg),
 		lightgray 50% / cover no-repeat;
 }
 .project-card:nth-child(4) .box {
-	background: url(/images/project_prime.jpg), lightgray 50% / cover no-repeat;
+	background: url(../images/project_prime.jpg), lightgray 50% / cover no-repeat;
 }
 .project-card:nth-child(5) .box {
-	background: url(/images/project_boxes.jpg), lightgray 50% / cover no-repeat;
+	background: url(../images/project_boxes.jpg), lightgray 50% / cover no-repeat;
 }
 .project-card:nth-child(6) .box {
-	background: url(/images/inspiration_no_borders.jpg),
+	background: url(../images/inspiration_no_borders.jpg),
 		lightgray 50% / cover no-repeat;
 }
 .project-card:nth-child(7) .box {
-	background: url(/images/limited_edition.jpg), lightgray 50% / cover no-repeat;
+	background: url(../images/limited_edition.jpg),
+		lightgray 50% / cover no-repeat;
 }
 .project-card:nth-child(8) .box {
-	background: url(/images/project_lab.jpg), lightgray 50% / cover no-repeat;
+	background: url(../images/project_lab.jpg), lightgray 50% / cover no-repeat;
 }
 .project-card:nth-child(9) .box {
-	background: url(/images/growing_business.jpg), lightgray 50% / cover no-repeat;
+	background: url(../images/growing_business.jpg),
+		lightgray 50% / cover no-repeat;
 }
 .box .overlay {
 	color: var(--text-dark-bg-color);
